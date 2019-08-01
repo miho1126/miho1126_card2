@@ -22,6 +22,7 @@
   border: solid 1px #CCCCCC;
   box-shadow: 0 3px 6px #CCCCCC;
   margin: 30px;
+  position: relative;
 }
 
 .card-img,
@@ -85,7 +86,24 @@
 .card3,
 .card4,
 .card5 {
-  float: left;
+float: left;
 }
 
+/* SP MediaQuery end */
+
+/* SP MediaQuery */
+@media only screen and (min-width:1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+  }
+.card,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  margin: 0 auto;
+}
+}
 /* SP MediaQuery end */
